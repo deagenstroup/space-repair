@@ -1,0 +1,20 @@
+Each level is stored in a text file containing integers
+corresponding to varius values needed for the levels 
+construction. There are to be no spaces at the front of
+each line or at the end and there is to be only one space
+seprating each integer value.
+The format goes like this:
+[two integers for the window resolution]
+[two integers for the starting position of the player]
+[four integers for the rectangle of the repair modules]
+...repeating until a semicolen is reached ";"
+[three integers for powerup position and type]
+ (x, y, type) (type 1 = light, type 2 = speed)
+...repeating until a semicolen is reached ";"
+[four integers for the rectangle of a wall]
+...repeating this last format for however many walls are 
+in the level.
+
+-each four integer group is two coordinates (x, y)
+representing the top-left vertice and the bottom-right
+vertice of the rectangle, respectively
